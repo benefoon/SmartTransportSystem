@@ -132,7 +132,7 @@ The ERD for this database illustrates the relationships between tables like `Veh
 ---
 
 ## 👩‍💻 Author
-- **[Your Full Name](https://github.com/your-username)**  
+- Sam, Eef, Arsh
   A computer science student passionate about database systems and transportation technology.
 
 ---
