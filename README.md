@@ -114,7 +114,7 @@ Here are some examples of queries you can run from the `queries.sql` file:
 
 ---
 
-## 🐍 Python Integration 🚀
+## 🐍 Python Integration
 
 This project includes Python scripts to interact with the database. These scripts are located in the `python_scripts/` directory.
 
@@ -163,8 +163,6 @@ This project includes Python scripts to interact with the database. These script
 
 ---
 
----
-
 ## 📊 Entity-Relationship Diagram (ERD)
 
 The ERD for this database illustrates the relationships between tables like `Vehicles`, `Stations`, `Schedules`, `Passengers`, and `Bookings`. You can find the diagram in the `docs/` folder.
@@ -174,11 +172,6 @@ The ERD for this database illustrates the relationships between tables like `Veh
 ## ✅ Testing the Project
 - After running the scripts, use the queries provided in `queries.sql` to test various scenarios.
 - Validate that data relationships (e.g., foreign keys) work correctly and enforce integrity.
-
----
-
-## 📃 License
-***
 
 ---
 
