@@ -114,6 +114,76 @@ Here are some examples of queries you can run from the `queries.sql` file:
 
 ---
 
+## 🐍 Python Integration 🚀
+
+This project includes Python scripts to interact with the database. These scripts are located in the `python_scripts/` directory.
+
+### **Python Scripts** 📂
+
+1. **`db_connector.py`** 🔌:
+   - Manages the connection to the MySQL database.
+   - Replace `your_username` and `your_password` with your MySQL credentials.
+   
+2. **`run_queries.py`** 🔍:
+   - Contains example queries for retrieving data.
+   - Example: Fetching active vehicles from the `Vehicles` table.
+   
+3. **`insert_data.py`** ➕:
+   - Demonstrates how to insert new records into the database.
+
+### **How to Run** 🏃‍♂️
+
+1. Install the required dependencies:
+   ```bash
+   pip install mysql-connector-python
+   ```
+
+2. Execute the scripts:
+   - To fetch active vehicles:
+     ```bash
+     python python_scripts/run_queries.py
+     ```
+   - To insert a new vehicle:
+     ```bash
+     python python_scripts/insert_data.py
+     ```
+
+### **Examples** 📊
+
+- **Fetch Active Vehicles Output:**
+  ```bash
+  Active Vehicles:
+  (1, 'Bus', 50, POINT(35.6892, 51.3890), 'Active')
+  ```
+
+- **Insert Vehicle Success Message:**
+  ```bash
+  Vehicle Bus added successfully.
+  ```
+
+---
+
+### Steps to Integrate Python Scripts into Your GitHub Project 💻
+
+1. Add the new files to Git:
+   ```bash
+   git add python_scripts/ README.md
+   ```
+
+2. Commit the changes:
+   ```bash
+   git commit -m "Added Python integration scripts and updated README"
+   ```
+
+3. Push the files to GitHub:
+   ```bash
+   git push origin main
+   ```
+
+
+
+---
+
 ## 📊 Entity-Relationship Diagram (ERD)
 
 The ERD for this database illustrates the relationships between tables like `Vehicles`, `Stations`, `Schedules`, `Passengers`, and `Bookings`. You can find the diagram in the `docs/` folder.
