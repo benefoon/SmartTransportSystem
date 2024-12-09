@@ -42,11 +42,8 @@ Follow these steps to set up and run the project:
    ```bash
    git clone https://github.com/your-username/SmartTransportDatabase.git
    cd SmartTransportDatabase
-برای ادامه‌ی درست و بدون نقص، از همان بخش ادامه می‌دهم و توضیحات کامل را ارائه می‌کنم.  
 
----
-
-### **Steps (ادامه)**
+2. Open the SQL scripts in your database management tool.
 
 3. **Import SQL Scripts**  
    Open your database management tool (e.g., MySQL Workbench or phpMyAdmin) and run the SQL scripts in the following order:
@@ -123,6 +120,3 @@ Follow these steps to set up and run the project:
 
 ### **Support**
 For any issues, feel free to [open an issue](https://github.com/your-username/SmartTransportDatabase/issues) in this repository, and I'll get back to you as soon as possible!
-
----
-
