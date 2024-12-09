@@ -163,25 +163,6 @@ This project includes Python scripts to interact with the database. These script
 
 ---
 
-### Steps to Integrate Python Scripts into Your GitHub Project 💻
-
-1. Add the new files to Git:
-   ```bash
-   git add python_scripts/ README.md
-   ```
-
-2. Commit the changes:
-   ```bash
-   git commit -m "Added Python integration scripts and updated README"
-   ```
-
-3. Push the files to GitHub:
-   ```bash
-   git push origin main
-   ```
-
-
-
 ---
 
 ## 📊 Entity-Relationship Diagram (ERD)
