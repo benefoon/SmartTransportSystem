@@ -87,36 +87,60 @@ Follow these steps to set up and run the project:
 
 ---
 
-### **How to Test the Project**
-1. Open a database tool (e.g., MySQL Workbench).
-2. Import and execute the scripts (`database_schema.sql`, `insert_sample_data.sql`).
-3. Run sample queries from `queries.sql` to validate the database functionality.
-4. Check foreign key constraints by trying to insert or delete data that violates them. 
+## 🚀 Example Queries
+
+Here are some examples of queries you can run from the `queries.sql` file:
+
+- **View all active vehicles**:
+  ```sql
+  SELECT * FROM Vehicles WHERE Status = 'Active';
+  ```
+
+- **List schedules for a specific station**:
+  ```sql
+  SELECT Stations.StationName, Vehicles.VehicleType, Schedules.ArrivalTime, Schedules.DepartureTime
+  FROM Schedules
+  JOIN Stations ON Schedules.StationID = Stations.StationID
+  JOIN Vehicles ON Schedules.VehicleID = Vehicles.VehicleID
+  WHERE Stations.StationID = 1;
+  ```
+
+- **Count bookings for each vehicle**:
+  ```sql
+  SELECT VehicleID, COUNT(*) AS TotalBookings
+  FROM Bookings
+  GROUP BY VehicleID;
+  ```
 
 ---
 
-### **Expected Results**
-- Successfully retrieve vehicle data, schedules, and booking information.
-- Accurate relationships between tables, such as:
-  - Each `VehicleID` in `Schedules` exists in `Vehicles`.
-  - Each `PassengerID` in `Bookings` exists in `Passengers`.
+## 📊 Entity-Relationship Diagram (ERD)
+
+The ERD for this database illustrates the relationships between tables like `Vehicles`, `Stations`, `Schedules`, `Passengers`, and `Bookings`. You can find the diagram in the `docs/` folder.
 
 ---
 
-### **Common Issues and Fixes**
-1. **Foreign Key Constraint Errors**  
-   Ensure the referenced rows exist in parent tables before inserting data in child tables.
-   
-2. **Syntax Errors**  
-   Double-check SQL syntax, especially if using a different SQL engine (like PostgreSQL or SQLite).
+## ✅ Testing the Project
+- After running the scripts, use the queries provided in `queries.sql` to test various scenarios.
+- Validate that data relationships (e.g., foreign keys) work correctly and enforce integrity.
 
 ---
 
-### **Next Steps (Optional Enhancements)**
-- Add user-friendly frontend tools (e.g., a web interface) to interact with the database.
-- Integrate real-time tracking using a simulation or IoT data sources.
+## 📃 License
+***
 
 ---
 
-### **Support**
-For any issues, feel free to [open an issue](https://github.com/your-username/SmartTransportDatabase/issues) in this repository, and I'll get back to you as soon as possible!
+## 👩‍💻 Author
+- **[Your Full Name](https://github.com/your-username)**  
+  A computer science student passionate about database systems and transportation technology.
+
+---
+
+## 🙌 Contributions
+Contributions, issues, and feature requests are welcome! Feel free to fork this repository and submit a pull request.
+
+---
+
+## 📞 Support
+If you encounter any issues, feel free to [open an issue](https://github.com/your-username/SmartTransportDatabase/issues) in this repository.
