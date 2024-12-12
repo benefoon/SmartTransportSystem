@@ -1,0 +1,7 @@
+import pandas as pd
+
+# خواندن داده‌ها از یک فایل CSV
+data = pd.read_csv('data.csv')
+
+# نمایش 5 ردیف اول داده‌ها
+print(data.head())
