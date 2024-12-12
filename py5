@@ -1,0 +1,7 @@
+import pandas as pd
+
+# فرض کنید که data یک DataFrame است
+data = pd.read_csv('data.csv')
+
+# ذخیره‌سازی داده‌ها به یک فایل CSV جدید
+data.to_csv('new_data.csv', index=False)
