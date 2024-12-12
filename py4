@@ -1,0 +1,10 @@
+import pandas as pd
+
+# خواندن داده‌ها
+data = pd.read_csv('data.csv')
+
+# فیلتر کردن داده‌ها بر اساس شرط خاص
+filtered_data = data[data['column_name'] > threshold_value]
+
+# نمایش داده‌های فیلتر شده
+print(filtered_data)
